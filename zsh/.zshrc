@@ -78,3 +78,11 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### for rvm
 source /home/hit9/.rvm/scripts/rvm
+
+### for gvm
+source $HOME/.gvm/scripts/gvm
+
+# go path
+export GOROOT=$HOME/go-lang
+export GOPATH=$HOME/GoCode
+export PATH=$PATH:$GOROOT/bin

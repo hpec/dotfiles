@@ -87,6 +87,10 @@ Bundle "cespare/vim-toml"
 Bundle "tpope/vim-haml"
 ""
 Bundle "terryma/vim-multiple-cursors"
+
+"Go lang
+Bundle "jnwhiteh/vim-golang"
+
 "-------------------------------------------------------------1}}}
 
 

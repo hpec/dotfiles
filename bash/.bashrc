@@ -120,3 +120,4 @@ export PROMPT_COMMAND="_update_ps1"
 eval `dircolors ~/dircolors.256dark`
 
 TERM=screen-256color
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
