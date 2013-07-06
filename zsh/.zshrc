@@ -55,8 +55,6 @@ alias reload!='. ~/.zshrc'
 alias pyserver='python -m SimpleHTTPServer'
 # get file size
 alias sizeof='stat -c %s'
-# alias for sjl/t
-alias t='python ~/.t/t.py --task-dir ~/.task-dir-for-t --list tasks'
 
 # powerline-shell
 function powerline_precmd() {
@@ -88,3 +86,4 @@ source $HOME/.gvm/scripts/gvm
 export GOROOT=$HOME/go-lang
 export GOPATH=$HOME/GoCode
 export PATH=$PATH:$GOROOT/bin
+export PATH=${PATH}:$HOME/ad/platform-tools

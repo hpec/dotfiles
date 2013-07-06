@@ -12,6 +12,10 @@ let g:vundle_default_git_proto="git"
 "---------------------------- 配色 -------------------------{{{2
 "solarized 配色
 Bundle "altercation/vim-colors-solarized"
+"molokai
+Bundle "tomasr/molokai"
+
+Bundle "Pychimp/vim-luna"
 "-----------------------------------------------------------2}}}
 "自动补全插件
 Bundle 'neocomplcache'
@@ -252,7 +256,12 @@ let g:solarized_contrast="high"
 "let g:solarized_visibility="high"
 "背景:暗色
 set background=dark
-colorscheme solarized
+if has('gui_running')
+    colorscheme molokai
+    let g:rehash256 = 1
+else
+    colorscheme solarized
+endif
 "使vim在终端保持透明
 hi Normal ctermbg=NONE
 "-----------------------------------------------2}}}
@@ -400,3 +409,5 @@ map <C-v> "+p
 :command WS :%s/\s\+$//e
 " ---------------------------------------------------------------------1}}}
 "
+autocmd BufWrite *.c :WS
+autocmd BufWrite *.h :WS
